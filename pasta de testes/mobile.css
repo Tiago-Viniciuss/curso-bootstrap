@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+nav {
+    left: 0;
+    height: 100vh;
+}
+
+main #red-dead {
+    width: 80vw;
+}
+
+nav a {
+    height: 25px;
+    margin: 30px 0px;
+    display: block;
+    font-size: 1.3em;
+}
+
+aside {
+    height: 1100px;
+}
+
+aside div {
+    margin: 30px 0px;
+    width: 50px;
+    height: 150px;
+}
+
+footer {
+    text-align: center;
+}

@@ -142,3 +142,25 @@ img-thumbnail: Cria uma borda específica na imagem, como se fosse uma thumbnail
 -------------------------------------------------------------------------------------
 
 invisible: Esconde um elemento
+
+
+-----------------------------------------------------------------------------------------
+
+alert: Transforma o elemento ( div, por exemplo ) em um alerta
+
+alert-success, alert-info, alert-warning, etc. dão um estilo de cor, borda e indicação respectiva ao nome da classe. Por exemplo, alert-succes indica sucesso na ação, alert-warning indica um alerta, etc.
+
+alert-dismissible: Faz com que essa caixa de alerta possa ser fechada
+
+
+--------------------------------------------------------------------------------------------
+
+btn: Todo botão deve acompanhar a classe btn para dar as configurações padrões do Bootstrap
+
+btn-primary: As cores nos botões são apicadas da maneira padrão, btn- seguido do nome da cor. Todos os botões recebem :hover automático
+
+btn-outline-warning: Ao usar essa classe, meu botão recebe a borda e texto na cor correspondente, e o fundo branco. Então, ao passar o mouse, o fundo recebe a cor correspondente, podendo ser warning, dark, success, etc.
+
+btn-close: Quando houver um botão e eu quiser que ele tenha um X, posso usar o btn-close
+
+data-bs-dismiss: Normalmente, o botão fechará alguma coisa. No caso do alerta, se eu usar um alert-dismissible, posso usar essa função aqui para fechar o botão em questão. Se a classe a ser fechada for um alert, devo criar: data-bs-dismiss:="alert" 
