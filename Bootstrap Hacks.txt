@@ -1,0 +1,144 @@
+CLASSES do Bootstrap:
+
+--------------------------------------------------------------------------
+
+container: gera um container fixo, centralizado e responsivo, com larguras pré-definidas
+
+container-fluid: gera um container que se ajusta a 100% da área, mesmo sendo responsivo. Diferente do fixo, que centraliza-se na página.
+
+container-(breakpoint)- pode variar de acordo com o tamanho da largura da tela. Por exemplo, se eu usar as classes abaixo, os containers se comportarão de forma diferente:
+
+container-sm, container-md, container-lg, container-xl e container-xxl
+
+
+link de pesquisa:	https://getbootstrap.com/docs/4.4/layout/overview/
+
+-------------------------------------------------------------------------
+
+m-4: Aplica margem 4 em todo o elemento
+
+my-5: Aplica margem 5 no eixo y
+
+mx-6: Aplica margem 6 no eixo x
+
+mx-auto: Alinha o elemento ao centro, como o margin-auto
+
+--------------------------------------------------------------------------------
+
+p-5: adiciona 5px de padding geral. Posso usar qualquer valor após o p-, por exemplo: p-4, p-10, etc.
+
+pt-3: adiciona padding-top
+
+pb-2: adiciona padding-bottom
+
+--------------------------------------------------------------------------
+
+bg-: adiciona background-color ao elemento. O bg- já tem cores predeterminadas, como:
+
+	bg-primary: azul
+	bg-secondary: cinza
+	bg-success: verde
+	bg-danger: vermelho
+	bg-warning: mostarda
+	bg-info: azul esverdeado
+	bg-light: branco gelo
+	bg-dark: preto fosco
+	bg-white: branco
+	bg-transparent: transparente
+
+
+
+----------------------------------------------------------------------------
+text-center: Alinha o conteúdo do texto ao centro.
+
+text-start: Alinha o conteúdo do texto à esquerda.
+
+text-end: Alinha o conteúdo do texto à direita.
+
+text-uppercase: Transforma a palavra ou texto selecionado em caixa alta.
+
+text-lowercase: Transforma a palavra ou texto selecionado em caixa baixa.
+
+text-capitalize: Transforma a primeira letra de cada palavra em caixa alta.
+
+display-1: O display- adiciona uma formatação diferente para o texto e pode variar de display-1 até display-6, do maior para o menor, respectivamente.
+
+
+
+text-: As mesmas regras de cores do background, valem para o texto, contendo apenas algumas diferenças:
+
+	text-primary: azul
+	text-secondary: cinza
+	text-success: verde
+	text-danger: vermelho
+	text-warning: mostarda
+	text-info: azul esverdeado
+	text-light: branco gelo
+	text-dark: preto fosco
+	text-body: preto 
+	text-muted: cinza fosco
+	text-black-50: cinza claro fosco
+	text-white: branco
+	text-white-50: branco escuro
+
+-----------------------------------------------------------------------------
+
+
+border: Cria uma borda simples, sutil e de cor cinza
+
+rounded: Arredonda as bordas igual o border-radius
+
+Para adicionar cor nas bordas, posso seguir o mesmo conceito do bg- e text-, adicionando o border-primary, border-danger ou border-dark, por exemplo.
+
+Para isso, é importante ter primeiro um border criado.
+
+----------------------------------------------------------------------------------
+
+
+Pra criar um grid, eu devo ter uma div pai e divs filhos. 
+
+No pai, eu adiciono a classe row, por exemplo. Transformando-o em linha.
+
+Nos filhos, eu adiciono a classe col, dando a eles o comportamento de coluna.
+
+
+row - transforma o objeto em linha
+
+col - transforma o objeto em coluna
+
+Se eu quiser mudar o tamanho das colunas, posso ditar isso através de números após o traço:
+
+col
+
+col-1
+
+col
+
+Aqui, a coluna do meio ficará menor que as outras duas.
+
+col-1
+
+col-2
+
+col-3
+
+Aqui, as colunas vão ficando maiores, partindo do 1. A 1 é a menor, a 2 é um pouco maior que a 1, e a 3 é a maior.
+
+Dessa forma, posso editar os pesos e espaço que cada coluna vai ocupar, podendo formar header, main, aside, article, footer, etc.
+
+------------------------------------------------------------------------
+
+
+Para tratar imagens, posso adicionar uma imagem normal, usando o img src, e em seguida:
+
+w-25: Altera a largura da imagem para 25% do tamanho definido pelo Bootstrap, podendo ser usado outros valores pré-definidos, como w-50, w-75 e w-100
+
+d-block: Transforma o display para block, para eu poder centralizar a imagem usando margin-auto ( mx-auto ), por exemplo
+
+img-thumbnail: Cria uma borda específica na imagem, como se fosse uma thumbnail, de fato
+
+
+
+-------------------------------------------------------------------------------------
+
+invisible: Esconde um elemento
