@@ -163,4 +163,104 @@ btn-outline-warning: Ao usar essa classe, meu botão recebe a borda e texto na c
 
 btn-close: Quando houver um botão e eu quiser que ele tenha um X, posso usar o btn-close
 
+btn-group: Trabalha todos os botões do container ao mesmo tempo, pode ser btn-group-sm, -lg ou -vertical. Ditando os tamanhos e também a apresentação de um em cima do outro, respectivamente.
+
 data-bs-dismiss: Normalmente, o botão fechará alguma coisa. No caso do alerta, se eu usar um alert-dismissible, posso usar essa função aqui para fechar o botão em questão. Se a classe a ser fechada for um alert, devo criar: data-bs-dismiss:="alert" 
+
+Para criar um botão com uma lista inclusa nele, como um menu, eu devo ter o botão com class dropdown-toggle e um elemento JavaScript data-bs-toggle, qeu fará o menu descer, em seguida devo ter uma div ou uma tag menu abaixo do botão, com os respectivos links. Essa div/menu deve conter a class dropdown-menu, e os links devem receber a class dropdown-item. Para finalizar, as divs e o botão devem estar envelopados em uma div pai, que deve conter a class btn-group.
+
+-------------------------------------------------------------------------------------------
+
+d-block, d-inline, d-flex, d-grid, d-none: Seguem os padrões CSS, onde dão ao elemento o display escolhido
+
+float-start: Com esta classe, eu posiciono o elemento à esquerda do container
+
+float-end: Com esta classe, eu posiciono o elemento à direita do container
+
+mx-auto: Alinha o elemento ao centro, como o margin-auto, mas para isso, tenho que adiconar um mx, antes.
+
+align-items-start: Alinha os itens/filhos dentro do container/pai no topo e vertical
+
+align-items-center: Alinha os itens/filhos dentro do container/pai no centro e vertical
+
+align-items-end: Alinha os itens/filhos dentro do container/pai na base e vertical
+
+align-self-start: Alinha o próprio elemento ao topo
+
+align-self-center: Alinha o próprio elemento ao centro
+
+align-self-end: Alinha o próprio elemento à base
+
+justify-content-items-start: Alinha os itens/filhos dentro do container/pai no topo e horizontal
+
+justify-content-center: Alinha os itens/filhos dentro do container/pai no centro e horizontal
+
+
+justify-content-end: Alinha os itens/filhos dentro do container/pai na base e horizontal
+
+order-1: Se eu tiver, por exemplo, 3 colunas, posso inverter a ordem das mesmas, usando esta class order-. Posso fazer na coluna 1, order-3, na coluna 2, order-1 e na coluna 3, order-2. 
+
+
+-----------------------------------------------------------------------------------------
+
+progress: Em uma div, a class progress cria um fundo para uma barra de progresso
+
+progress-bar: É a barra de progresso, de fato, que correrá dentro do fundo acima. Esta deve estar em uma div filha e com width, senão não aparecerá
+
+Para que essa barra funcione, eu devo usar JavaScript para animá-la. Incluo um ID na barra e chamo no script, através do DOM. O código que resultou, foi este:
+
+
+		let barra = document.getElementById('progressbar');
+        let carga = 0;
+        let intBarra = setInterval(()=>{
+            barra.style.width = carga + "%";
+            carga ++;
+            if(carga >= 100) {
+                carga = 0;
+            }
+        } ,100);
+
+
+progressbar foi o ID que eu dei para a barra.
+
+
+Para mudar a cor da barra, posso usar o bg- na própria barra de progresso
+
+Para acrescentar a porcentagem à barra, basta inserir um innerHTML ao texto da div:
+
+
+  let barra = document.getElementById('progressbar');
+        let carga = 0;
+        let intBarra = setInterval(()=>{
+            barra.innerHTML = carga + "%"; <<<<<<< Aqui
+            barra.style.width = carga + "%";
+            carga ++;
+            if(carga >= 100) {
+                carga = 0;
+            }
+        } ,300);
+
+
+progress-bar-striped: Dá um estilo com riscas levemente transparentes à barra
+
+progress-bar-animated: As riscas do striped se movem. É necessário ter o striped setado antes.
+
+---------------------------------------------------------------------------------------
+
+
+spinner-border: Cria um spinner de loading, demonstrando que algo está carregando
+
+spinner-grow: Cria um spinner que pisca na tela, ao invés de girar
+
+spinner-border-sm: Um spinner border menor. Necessita ter a classe spinner-border junto
+
+spinner-grow-sm: Um spinner grow menor. Necessita ter a classe spinner-grow junto
+
+Para mudar a cor do spinner, posso usar a classe text- mais a cor desejada
+
+
+---------------------------------------------------------------------------------------
+
+pagination: Cria uma paginação, para linkar outras páginas dentro do site, ou outros sites
+
+Primeiro, preciso criar uma UL e seus respectivos LI. Na UL, darei a class pagination, nas LI, darei a class page-item, e dentro da LI, terá um texto informando a página, normalmente é um número da página ou o texto indicando página anterior ou próxima. Este texto deve ser envelopado em uma âncora ( a href ) e esse A carregará a class page-link. Pronto.
